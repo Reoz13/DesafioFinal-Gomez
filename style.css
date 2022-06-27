@@ -1,0 +1,82 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+    font-weight:300;
+}
+
+
+
+/*Navbar */
+
+
+
+.bg__nav{
+    background-color: #AD84A6;
+}
+
+
+.nav__color-h{
+    font-size: 18px;
+    color: black;
+}
+.nav__color-h:hover{
+    color: #e3c9e6;
+}
+
+.btn__search{
+    color: #e3c9e6;
+
+}
+
+.btn__search:hover{
+    background-color:#e3c9e6 ;
+    color: #65195E;
+}
+
+
+
+
+
+
+
+/* Carrousel*/
+
+
+.carrousel__width{
+    width: 800px;
+    height: 600px;
+}
+
+.carrousel__size{
+    height: 50vh;
+    width: 80vw;
+}
+
+
+/*Beneficio*/
+
+.bg__beneficio{
+    background-color: #FFF6FF;
+}
+
+.beneficio__parrafo{
+    font-size: 20px;
+    font-weight:550;
+}
+
+.beneficio__miniparrafo{
+    font-size: 14px;
+}
+
+/*Secciones*/
+
+
+/*Newsletter*/
+
+.btn__anmt{
+    
+    
+}
+
