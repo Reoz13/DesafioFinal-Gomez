@@ -14,13 +14,17 @@ ul{
     list-style: none;
 }
 
+h1{
+    font-weight: 600;
+}
 
 /*Navbar */
 
 
 
 .bg__nav{
-    background-color: #AD84A6;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 2%, #9d23e8 36%, rgba(233,192,240,1) 100%);
 }
 
 
@@ -33,13 +37,13 @@ ul{
 }
 
 .btn__search{
-    color: #e3c9e6;
+    color: #000000;
 
 }
 
 .btn__search:hover{
-    background-color:#e3c9e6 ;
-    color: #65195E;
+    background-color:#e4a7ee;
+    color: #000;
 }
 
 
@@ -50,10 +54,17 @@ ul{
 
 /* Carrousel*/
 
+.carousel-item img{ 
+    object-fit: cover;
+    object-position: center;
+    
 
+}
 .carrousel__width{
     width: 800px;
+    max-width: 100%;
     height: 600px;
+    
 }
 
 .carrousel__size{
@@ -65,7 +76,7 @@ ul{
 /*Beneficio*/
 
 .bg__beneficio{
-    background-color: #FFF6FF;
+    background-color: #eaaff4;
 }
 
 .beneficio__parrafo{
@@ -81,7 +92,9 @@ ul{
 
 
 .card__bg{
-    background-color: #E8D5B5;
+    color: white;
+    background: rgb(137,16,152);
+    background: linear-gradient(90deg, rgba(137,16,152,1) 0%, rgba(192,123,235,1) 44%, rgba(233,192,240,1) 88%);
     
 }
 
@@ -99,15 +112,15 @@ ul{
 
     color:rgb(67, 3, 67);
     border: 2px solid #430343;
-    transition: ease-in-out 500ms;
+    transition: ease-in-out 200ms;
     
 
 }
 
 .btn__vermas:hover{
-    background-color: rgb(67, 3, 67);
+    background-color: #9d23e8;
     color: white;
-    border: 2px solid #B09E80;
+    border: 2px solid #430343;
 
 }
 
@@ -129,9 +142,14 @@ ul{
 
 }
 
-.btn__anmt:focus{
-    transform: scale(1.2);
-}
+
+
+
+
+
+
+
+
 
 
   /*footer*/
