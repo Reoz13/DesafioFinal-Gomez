@@ -18,30 +18,30 @@
 </head>
 
 <body>
-  <!-- Header, logo, y navegador-->
-  <header>
+   <!-- Header, logo, y navegador-->
+   <header>
     <nav class="navbar navbar-expand-lg bg__nav">
       <div class="container-fluid">
         <a class="navbar-brand " href="./index.html"><img src="./Multimedia/logo.png" alt="" class="img-fluid" width="70px"
             height="0px" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar__collapse navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class=" collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link  nav__color-h" aria-current="page" href="./lonuevo.html">Lo nuevo</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle nav__color-h" href="./productos.html" id="navbarDropdown" role="button"
+              <a class="nav-link dropdown-toggle nav__color-h  nav__focus" href="./productos.html" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Productos
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item nav__color-h" href="#">Buzos</a></li>
-                <li><a class="dropdown-item nav__color-h" href="#">Remeras</a></li>
-                <li><a class="dropdown-item nav__color-h" href="#">Pantalon</a></li>
+              <ul class="nav__ul-drop dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item subMenu__color-h" href="#">Buzos</a></li>
+                <li><a class="dropdown-item subMenu__color-h" href="#">Remeras</a></li>
+                <li><a class="dropdown-item subMenu__color-h" href="#">Pantalones</a></li>
                 <li>
                   <li><hr class="dropdown-divider"></li>
                   <a class="dropdown-item nav__color-h" href="./productos.html">Ver mas</a>
@@ -57,7 +57,7 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2 ms-5" type="search" placeholder="Search" aria-label="Search" />
+            <input class="form-control me-2 ms-5" type="search" placeholder="Buscar" aria-label="Search" />
             <button class="btn btn__search" type="submit"><i class="bi bi-search"></i></button>
 
             <button class="btn btn__search" type="submit"><i class="bi bi-cart"></i></button>
@@ -67,22 +67,66 @@
     </nav>
   </header>
 
+
   <main>
 
     <!--Nuevos ingresos-->
 
     
+<div class="container-fluid">
+  <div class="row position-relative">
+    <div class="col-md-12 back__diagonal position-relative d-flex align-items-center">
 
+      <div class="img__nuevo position-absolute ">
+
+        <img src="./Multimedia/lonuevo/buzo.jpeg" class="nuevo__img"  alt="">
+      </div>
+
+      <div class="d-flex flex-column align-items-center ms-5">
+
+        <p class=" nuevo__p">Buzo The time</p>
+        <p class=" nuevo__p">Nueva coleccion invierno 2022</p>
+
+      </div>
+    </div>
+
+
+    <!-- LA wea de arriba alreves-->
+
+    <div class="col-md-12 back__diagonal position-relative d-flex justify-content-center align-items-center">
+
+      <div class="div__pDer">
+      
+        <p class=" nuevo__p__der text-center">Sweater stripes joy</p>
+        <p class=" nuevo__p__der text-center">Invierno 2022</p>
+
+      </div>
+
+      <div class="prueba__derecha position-absolute ">
+
+        <img src="./Multimedia/lonuevo/sweater.jpg" class="img__diago2" alt="">
+      </div>
+
+      
+    </div>
+    
+
+  </div>
+</div>
+
+
+<!-- 
     <div class="container-fluid">
       <div class="row ">
 
         <div class="col-md-6 d-flex justify-content-center mt-5 ">
-          <div class="card" style="width: 18rem;">
+          <div class="card position-relative" style="width: 18rem; ">
               <img src="./Multimedia/productos/buzo3b.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="card-body  card__diagonal">
+                <h5 class="card-title z_index">Remera Tranca Negra</h5>
+                <p class="card-text z_index">$4.900.</p>
+                <a href="#" class="btn  z_index btn__vermas">Agregar al carrito</a>
+                
               </div>
             </div>
       </div>
@@ -95,7 +139,7 @@
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary btn__vermas">Go somewhere</a>
               </div>
             </div>
       </div>
@@ -157,54 +201,56 @@
       </div>
     </div>
 
-    
+     -->
    
 
-       <!--Footer-->
+ <!-- footer-->
 
-       <div class="container-fluid">
+ <div class="container-fluid">
 
-           <div class="row bg__footer mt-5 py-4">
-             <div class="col-md-4 d-flex flex-column align-items-center  ">
-               <h4 class="h4foot text-white">Navegacion</h4>
-                 <ul class="ulfoot text-white">
-                     <li class="lifoot">Como comprar?</li>
-                     <li class="lifoot">Preguntas frecuentes</li>
-                     <li class="lifoot">Talles y medidas</li>
-                     <li class="lifoot">Politicas de cambio</li>
-                 </ul>
-     
-             </div>
-     
-             <div class="col-md-4 d-flex flex-column align-items-center  ">
-               <h4 class="h4foot text-white">Contactanos</h4>
-                 <ul class="ulfoot text-white">
-                     <li class="lifoot"><i class="bi bi-whatsapp"></i> Whatsapp</li>
-                     <li class="lifoot"><i class="bi bi-envelope"></i> Mail@gmail.com</li>
-                     <li class="lifoot"><i class="bi bi-geo-alt"></i> Direccion</li>
-                 </ul>
-     
-             </div>
-     
-             <div class="col-md-4 d-flex flex-column align-items-center  ">
-               <h4 class="h4foot text-white">Sigamos conectados</h4>
-         
-               <ul class="ulfoot text-white">
-                   <li class="lifoot"><i class="bi bi-instagram"></i> Instagram</li>
-                   <li class="lifoot"><i class="bi bi-youtube"></i> Youtube</li>
-                   <li class="lifoot"><i class="bi bi-facebook"></i> Facebook</li>
-               </ul>
-     
-             </div>
-     
-           </div>
+  <div class="row bg__footer mt-5 py-4 d-flex justify-content-center">
+    <div class="div__foot d-flex justify-content-center flex-column flex-md-row justify-content-md-between">
+      <div class="my-3">
+        <h4 class="h4foot text-white">Navegacion</h4>
+          <ul class="ulfoot text-white">
+              <li ><a href="./Navegacion/comprar.html" class="nav__color-h">Como comprar?</a> </li>
+              <li ><a href="./Navegacion/preguntas.html" class="nav__color-h">Preguntas frecuentes</a> </li>
+              <li ><a href="./Navegacion/talles.html" class="nav__color-h">Talles y medidas</a> </li>
+              <li ><a href="./politica.html" class="nav__color-h">Politicas de cambio</a> </li>
+          </ul>
 
+      </div>
 
-       </div>
-      
+      <div class="my-3">
+        <h4 class="h4foot text-white">Contactanos</h4>
+          <ul class="ulfoot text-white">
+            <li><a href="https://web.whatsapp.com/" target="_blank" class=" nav__color-h"><i class="bi bi-whatsapp"></i> Whatsapp</a></li>
+            <li><a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" class=" nav__color-h"><i class="bi bi-envelope"></i> Shop-gomez@gmail.com</a></li>
+            <li><a href="./contacto.html" class=" nav__color-h"><i class="bi bi-geo-alt"></i> Direccion</a></li>
+          </ul>
 
+      </div>
+
+      <div class="my-3">
+        <h4 class="h4foot text-white">Sigamos conectados</h4>
   
-  
+        <ul class="ulfoot text-white">
+
+          <li><a href="https://www.instagram.com/Shop-gomez/" target="_blank" class=" nav__color-h"><i class="bi bi-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.youtube.com/c/gomez-shop" target="_blank" class=" nav__color-h"><i class="bi bi-youtube"></i> Youtube</a></li>
+          <li><a href="https://www.facebook.com/ggomez.shop.1/" target="_blank" class=" nav__color-h"><i class="bi bi-facebook"></i> Facebook</a></li>
+          
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
 
 
 
