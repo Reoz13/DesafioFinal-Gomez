@@ -1,0 +1,37 @@
+.bg__nav {
+  background: black;
+  .navbar__collapse {
+    background-color: white;
+  }
+
+  .nav__focus:focus {
+    color: white;
+  }
+  .nav__ul-drop {
+    background-color: black;
+    .subMenu__color-h {
+      font-size: 1rem;
+      color: white;
+      &:hover {
+        color: rgb(0, 0, 0);
+      }
+    }
+  }
+  .btn__search {
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: #000;
+    }
+  }
+}
+
+.nav__color-h {
+  font-size: 1rem;
+  color: white;
+
+  &:hover {
+    color: rgb(160, 158, 158);
+  }
+}

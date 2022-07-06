@@ -1,0 +1,66 @@
+.back__diagonal {
+  height: 400px;
+  width: 100%;
+  background-color: #f7f7f7;
+  .img__nuevo {
+    position: absolute;
+    width: 59%;
+    height: 100%;
+    clip-path: polygon(21% 0, 100% 0, 100% 100%, 2.3% 100%);
+    right: 0%;
+    .nuevo__img {
+      width: 100%;
+      position: absolute;
+      bottom: -60%;
+    }
+  }
+  .nuevo__p {
+    font-size: 3rem;
+    font-family: "Expletus Sans", cursive;
+    font-weight: 600;
+  }
+
+  .div__pDer {
+    margin-left: 50%;
+    .nuevo__p__der {
+      font-size: 3rem;
+      font-family: "Expletus Sans", cursive;
+      font-weight: 600;
+      margin-right: 20%;
+    }
+  }
+  .banner__izquierda {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    clip-path: polygon(0% 0, 79% 0, 100% 100%, 0 100%);
+    right: 45%;
+    .img__diago2 {
+      position: absolute;
+      height: 180%;
+      left: 6.3%;
+      bottom: -10%;
+    }
+  }
+}
+
+// Css de las cards que se iban a utilizar inicialmente en la pag -lo nuevo-
+
+// .z_index {
+//     position: relative;
+//     z-index: 2;
+// }
+
+// .card__diagonal::before {
+
+//     content: '';
+//     position: absolute;
+//     width: 18rem;
+//     height: 12rem;
+//     background-color: hsl(0, 0%, 94%);
+//     clip-path: polygon(0 26%, 100% 13%, 100% 100%, 0 100%);
+//     left: -1px;
+//     bottom: 0;
+//     z-index: 0;
+
+// }
