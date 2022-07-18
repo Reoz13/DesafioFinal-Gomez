@@ -8,6 +8,10 @@
 
 a {
   text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(160, 158, 158);
 }
 
 ul {
@@ -17,7 +21,16 @@ ul {
 }
 
 h1 {
+  font-size: 3rem;
   font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+main {
+  min-height: 100vh;
 }
 
 .bg__nav {
@@ -87,17 +100,18 @@ h1 {
   color: black;
 }
 .card__bg .h3__secciones {
-  font-size: 0.5rem;
+  font-size: 1.5rem;
   font-family: "Expletus Sans", cursive;
   font-weight: 600;
 }
-.card__bg .btn__vermas {
+
+.btn__vermas {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%);
   color: white;
   transition: ease-in-out 200ms;
   border-width: 1px;
 }
-.card__bg .btn__vermas:hover {
+.btn__vermas:hover {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, #000 100%);
   color: white;
 }
@@ -121,49 +135,105 @@ h1 {
   height: 100%;
 }
 
-.back__diagonal {
+.main__lonuevo {
+  min-height: 100vh;
+}
+
+.banner_p {
+  font-size: 3rem;
+  font-family: "Expletus Sans", cursive;
+  font-weight: 600;
+}
+
+.padre__banner {
   height: 400px;
-  width: 100%;
-  background-color: #f7f7f7;
 }
-.back__diagonal .img__nuevo {
-  position: absolute;
-  width: 59%;
-  height: 100%;
-  -webkit-clip-path: polygon(21% 0, 100% 0, 100% 100%, 2.3% 100%);
-          clip-path: polygon(21% 0, 100% 0, 100% 100%, 2.3% 100%);
-  right: 0%;
+
+.padre_p_banner {
+  height: 400px;
 }
-.back__diagonal .img__nuevo .nuevo__img {
-  width: 100%;
-  position: absolute;
-  bottom: -60%;
+
+.p__banner {
+  height: 400px;
 }
-.back__diagonal .nuevo__p {
-  font-size: 3rem;
+
+.banner {
+  background-size: cover;
+  height: 400px;
+}
+
+.banner_lonuevo {
+  background-image: url("../../Multimedia/lonuevo/buzo.jpeg");
+  -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+}
+@media screen and (max-width: 1024px) {
+  .banner_lonuevo {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+}
+
+.banner_lonuevo2 {
+  background-image: url("../../Multimedia/lonuevo/sweater.jpg");
+  background-position: left center;
+  -webkit-clip-path: polygon(0 0, 71.5% 0, 96.4% 100%, 0% 100%);
+          clip-path: polygon(0 0, 71.5% 0, 96.4% 100%, 0% 100%);
+}
+@media screen and (max-width: 1024px) {
+  .banner_lonuevo2 {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+}
+
+.banner_lonuevo3 {
+  background-image: url("../../Multimedia/lonuevo/skate.jpg");
+  -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+}
+@media screen and (max-width: 1024px) {
+  .banner_lonuevo3 {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+}
+
+.banner_lonuevo4 {
+  background-image: url("../../Multimedia/lonuevo/outlet.jpg");
+  background-position: left top;
+  -webkit-clip-path: polygon(0 0, 71.5% 0, 96.4% 100%, 0% 100%);
+          clip-path: polygon(0 0, 71.5% 0, 96.4% 100%, 0% 100%);
+}
+@media screen and (max-width: 1024px) {
+  .banner_lonuevo4 {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+}
+
+.prod__img__effect-paso2 {
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.prod__img__effect-paso1 {
+  transition: 1000ms ease-in-out;
+}
+.prod__img__effect-paso1:hover .prod__img__effect-paso2 {
+  opacity: 1;
+}
+
+.card_product {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.h2_productos {
+  font-size: 2.2rem;
   font-family: "Expletus Sans", cursive;
   font-weight: 600;
-}
-.back__diagonal .div__pDer {
-  margin-left: 50%;
-}
-.back__diagonal .div__pDer .nuevo__p__der {
-  font-size: 3rem;
-  font-family: "Expletus Sans", cursive;
-  font-weight: 600;
-  margin-right: 20%;
-}
-.back__diagonal .banner__izquierda {
-  position: absolute;
-  width: 60%;
-  height: 100%;
-  -webkit-clip-path: polygon(0% 0, 79% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0% 0, 79% 0, 100% 100%, 0 100%);
-  right: 45%;
-}
-.back__diagonal .banner__izquierda .img__diago2 {
-  position: absolute;
-  height: 180%;
-  left: 6.3%;
-  bottom: -10%;
 }

@@ -1,0 +1,25 @@
+.prod__img__effect-paso2 {
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.prod__img__effect-paso1 {
+  transition: 1000ms ease-in-out;
+  &:hover .prod__img__effect-paso2 {
+    opacity: 1;
+  }
+}
+
+.card_product {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.h2_productos {
+  font-size: 2.2rem;
+  font-family: "Expletus Sans", cursive;
+  font-weight: 600;
+}

@@ -1,66 +1,61 @@
-.back__diagonal {
-  height: 400px;
-  width: 100%;
-  background-color: #f7f7f7;
-  .img__nuevo {
-    position: absolute;
-    width: 59%;
-    height: 100%;
-    clip-path: polygon(21% 0, 100% 0, 100% 100%, 2.3% 100%);
-    right: 0%;
-    .nuevo__img {
-      width: 100%;
-      position: absolute;
-      bottom: -60%;
-    }
-  }
-  .nuevo__p {
-    font-size: 3rem;
-    font-family: "Expletus Sans", cursive;
-    font-weight: 600;
-  }
+@import "./query";
+.main__lonuevo {
+  min-height: 100vh;
+}
 
-  .div__pDer {
-    margin-left: 50%;
-    .nuevo__p__der {
-      font-size: 3rem;
-      font-family: "Expletus Sans", cursive;
-      font-weight: 600;
-      margin-right: 20%;
-    }
-  }
-  .banner__izquierda {
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    clip-path: polygon(0% 0, 79% 0, 100% 100%, 0 100%);
-    right: 45%;
-    .img__diago2 {
-      position: absolute;
-      height: 180%;
-      left: 6.3%;
-      bottom: -10%;
-    }
+.banner_p {
+  font-size: 3rem;
+  font-family: "Expletus Sans", cursive;
+  font-weight: 600;
+}
+
+.padre__banner {
+  height: 400px;
+}
+
+.padre_p_banner {
+  height: 400px;
+}
+.p__banner {
+  height: 400px;
+}
+
+.banner {
+  background-size: cover;
+  height: 400px;
+}
+
+.banner_lonuevo {
+  background-image: url("../../Multimedia/lonuevo/buzo.jpeg");
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+  @include navegador {
+    clip-path: none;
   }
 }
 
-// Css de las cards que se iban a utilizar inicialmente en la pag -lo nuevo-
+.banner_lonuevo2 {
+  background-image: url("../../Multimedia/lonuevo/sweater.jpg");
+  background-position: left center;
+  clip-path: polygon(0 0, 71.5% 0, 96.4% 100%, 0% 100%);
+  @include navegador {
+    clip-path: none;
+  }
+}
 
-// .z_index {
-//     position: relative;
-//     z-index: 2;
-// }
+.banner_lonuevo3 {
+  background-image: url("../../Multimedia/lonuevo/skate.jpg");
 
-// .card__diagonal::before {
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+  @include navegador {
+    clip-path: none;
+  }
+}
 
-//     content: '';
-//     position: absolute;
-//     width: 18rem;
-//     height: 12rem;
-//     background-color: hsl(0, 0%, 94%);
-//     clip-path: polygon(0 26%, 100% 13%, 100% 100%, 0 100%);
-//     left: -1px;
-//     bottom: 0;
-//     z-index: 0;
-
-// }
+.banner_lonuevo4 {
+  background-image: url("../../Multimedia/lonuevo/outlet.jpg");
+  background-position: left top;
+  clip-path: polygon(0 0, 71.5% 0, 96.4% 100%, 0% 100%);
+  @include navegador {
+    clip-path: none;
+  }
+}
